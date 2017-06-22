@@ -1,15 +1,15 @@
 echo "1. Updating system clock"
 timedatectl set-ntp true
 echo
-echo "2. Formatting root partition"
+echo "2. Formatting root partition" # (modification required)
 mkfs.ext4 /dev/sda5 >/dev/null
 echo
-echo "3. Mounting root and boot partitions"
+echo "3. Mounting root and boot partitions" # (modification required)
 mount /dev/sda5 /mnt
 mkdir /mnt/boot
 mount /dev/sda2 /mnt/boot
 echo
-echo "4. Turning on swap"
+echo "4. Turning on swap" # (modification required)
 swapon /dev/sda6 >/dev/null
 echo
 echo "5. Cleaning boot"

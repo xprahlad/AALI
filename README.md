@@ -1,115 +1,143 @@
-# Arch Installer (Script)
+# AALI - Automated Arch Linux Installer (Shell Script)
+This is an automated Arch Linux installation script that covers pre-installation as well as post-installation. It is mostly useful if the system breaks and needs to be re-installed because disk partitioning section is not included here.
 
 # Warning
-Do not run this script unless you have read it completely and modified the scripts accordingly for you. I am not responsible for any damage or data loss caused to you due to your neglegence. You should have knowledge of what each command is doing and how to modify that command in your case.
+Do not run these scripts unless you have read this whole documentation carefully and modified the scripts accordingly for you. I am not responsible for any damage or data loss caused to you due to your negligence. You should have knowledge of what each command is doing and how to modify that command in your case. The commands that must be modified to prevent the data loss are marked as "modification required".
 
-# Note
-This is Arch Linux installation script for both pre-installation as well as post-installation for my PC. This script is useful if the system breaks and needs to be re-installed. I have already partitioned the disks for root and swap as /dev/sda5 and /dev/sda6 respectively and it is optimized for my personal intel laptop with UEFI boot.
+If root and swap partitions does not exist in your PC, they needs to be created before this script is executed. It is optimized for my Intel PC with UEFI boot mode hence go through the script thoroughly and make the required changes as per your specifications.
 
 # How to get this script during installation?
-After a live media is successfuly booted in UEFI mode:
+After Arch Linux live media is successfully booted and shell appears, issue the following commands:
 
 	wifi-menu
+
 	pacman -Sy unzip
-	wget https://github.com/ictsolved/arch-installer/archive/master.zip
+
+	wget https://github.com/ictsolved/aali/archive/master.zip
+
 	unzip master.zip
 
-# What are included?
+Now the scripts will be available in working directory along with this documentation. Make the marked changes in the scripts with nano or vi and execute.
 
-	1. Base Installation
+The best approach is to fork this repo and push your changes as per the specifications and requirements. This way the changes will be persistent and will be optimized for your PC as well. Afterwards whenever you need the installation of Arch on your PC, you can download your own version of this script and execute that without any hassle.
 
-	2. Post Installation
+# What are included within it?
 
-	3. Customizations
+	A. Base Installation
 
-# 1. Base Installation
-Inside this folder there is a script for setting up a base installation of arch automatically.
+	B. Post Installation
+
+	C. Customization
+
+# A. Base Installation
+Inside this folder there are two scripts for setting up a base installation of Arch system automatically.
 
 # Phase 1 - Installing base system
 
-	a. Updating system clock
+	1. Updating system clock
 
-	b. Formatting root partition
+	2. Formatting root partition (modification required)
 
-	c. Mounting root and boot partitions
+	3. Mounting root and boot partitions (modification required)
 
-	d. Turning on swap
+	4. Turning on swap (modification required)
 
-	e. Cleaning boot of previous installation
+	5. Cleaning boot of previous installation
 
-	f. Updating mirrors and signatures
+	6. Updating mirrors and signatures
 
-	g. Installing base system
+	7. Installing base system
 
-	h. Generating fstab
+	8. Generating fstab
 
-	i. Changing root
+	9. Changing root
 
 # Phase 2 - Configuring system inside chroot
 
-	a. Setting time-zone
+	1. Setting time-zone
 
-	b. Setting up locale
+	2. Setting up locale
 
-	c. Setting up Language
+	3. Setting up Language
 
-	d. Setting hostname
+	4. Setting hostname
 
-	e. Creating new initramfs
+	5. Creating new initramfs
 
-	f. Setting up password for root user
+	6. Setting up password for root user
 
-	g. Creating normal user
+	7. Creating normal user
 
-	h. Setting up password for the new user
+	8. Setting up password for the new user
 
-	i. Enabling sudo for new user
+	9. Enabling sudo for new user
 
-	j. Enabling multilib
+	10. Enabling multilib
 
-	k. Installing Bootloader
+	11. Installing Bootloader
 
-	l. Copying bootloader configurations
+	12. Copying bootloader configurations
 
-	m. Updating Bootloaders
+	13. Updating Bootloaders
 
-	n. Exiting chroot
+	14. Exiting chroot
 
-	o. Unmounting partitions
+	15. Unmounting partitions
 
-	p. Reboot
+	16. Reboot
 
 # 2. Post-installation
-Login as the normal user after reboot and download this script again in same way.
+Login as the normal user after reboot and download the script again in same way as before.
 
-	a. Installing Packer
+	1. Installing Packer
 
-	b. Installing Firmware Drivers
+	2. Installing Drivers
 
-	c. Installing Display and Sound Drivers
+		i. Installing Firmware Drivers
 
-	d. Installing XFCE4 Desktop Environment
+		ii. Installing Display Drivers
 
-	e. Installing fonts
+		iii. Installing Sound Drivers
 
-	f. Installing General Applications
+		iv. Installing Device Drivers
 
-	g. Installing Archives Tools
+		v. Installing Touchpad Drivers
 
-	h. Enabling Network Manager
+	4. Installing Applications
 
-	i. Ignoring Lid Close
+		i. Installing Archive tools
 
-	j. Remapping Insert Key to Delete Key (because delete key broken in my laptop)
+		ii. Installing Libre Office
 
-	k. Installing redshift
+		iii. Installing Fonts
 
-	l. Fixing screen-tearing
+		iv. Installing VLC and Codecs
 
-	m. Optimizing UI of Gimp
+		v. Installing General Packages
 
-	n. Reboot
+		vi. Installing GIMP Photo Editor
 
-Now login as normal user and type 'startx' to start the session.
+		vii. Installing Google Chrome
 
-Feel free to use this script and customize it accordingly for you. Thanks!
+		viii. Installing Evince Document Viewer
+
+		ix. Installing Atom Editor
+
+		x. Installing Ruby and Gems
+
+		xi. Installing redshift
+
+		xii. Installing Network Manager
+
+	5. Ignoring Lid Close
+
+	6. Remapping Insert Key to Delete Key
+
+	7. Fixing screen-tearing
+
+	8. Reboot
+
+After the reboot, login with your credentials and you'll be greeted with XFCE4 desktop.
+
+# C. Customization
+This folder contains the customization files. Some customizations are automatically copied whereas few needs to be manually done. Hence the files inside "Manual" will be helpful to accelerate the customization but it is optional if your customizations are different.
