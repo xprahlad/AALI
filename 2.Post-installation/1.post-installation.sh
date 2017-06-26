@@ -42,7 +42,7 @@ echo "ii. Installing Libre Office"
 sudo pacman -S --noconfirm --needed libreoffice-fresh hunspell-en
 echo
 echo "iii. Installing Fonts"
-sudo pacman -S --noconfirm --needed ttf-dejavu ttf-freefont
+sudo pacman -S --noconfirm --needed ttf-dejavu
 packer -S --noconfirm --noedit -S ttf-google-fonts-git
 echo
 echo "iv. Installing VLC and Codecs"
