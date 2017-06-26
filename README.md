@@ -44,7 +44,7 @@ Inside this folder there are two scripts for setting up a base installation of A
 
 	5. Cleaning boot of previous installation
 
-	6. Updating mirrors and signatures
+	6. Updating to latest mirrors
 
 	7. Installing base system
 

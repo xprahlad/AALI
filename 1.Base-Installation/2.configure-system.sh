@@ -5,7 +5,7 @@ hwclock --systohc
 echo
 echo "2. Setting up locale"
 echo >> /etc/locale.gen en_US.UTF-8 UTF-8
-locale-gen >/dev/null
+locale-gen
 echo
 echo "3. Setting up Language"
 echo >> /etc/locale.conf LANG=en_US.UTF-8
@@ -14,7 +14,7 @@ echo "4. Setting hostname"
 echo >> /etc/hostname arch
 echo
 echo "5. Creating new initramfs"
-mkinitcpio -p linux >/dev/null
+mkinitcpio -p linux
 echo
 echo "6. Enter new password for root user"
 passwd
@@ -22,16 +22,16 @@ echo
 echo "7. Enabling multilib"
 echo >> /etc/pacman.conf [multilib]
 echo >> /etc/pacman.conf Include = /etc/pacman.d/mirrorlist
-pacman -Sy >/dev/null
+pacman -Sy
 echo
 echo "8. Installing Bootloader"
-bootctl install >/dev/null
+bootctl install
 echo
 echo "9. Copying bootloader configurations"
 cp -r loader/ /boot/
 echo
 echo "10. Updating Bootloaders"
-bootctl update >/dev/null
+bootctl update
 echo
 echo "11. Creating user sarad"
 useradd -m -G wheel -s /bin/bash sarad
