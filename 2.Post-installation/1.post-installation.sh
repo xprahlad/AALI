@@ -78,7 +78,9 @@ echo "xi. Installing redshift"
 sudo pacman -S --noconfirm --needed redshift python-gobject python-xdg librsvg
 cp ../3.Customizations/redshift-gtk.desktop ~/.config/autostart/
 echo
-echo "xii. Installing Network Manager"
+echo "xii. Installing Oracle JDK"
+packer -S --noconfirm --noedit -S jdk
+echo "xiii. Installing Network Manager"
 sudo pacman -S --noconfirm --needed networkmanager network-manager-applet
 sudo systemctl enable NetworkManager.service
 sudo systemctl start NetworkManager.service

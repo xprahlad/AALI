@@ -127,7 +127,9 @@ Login as the normal user after reboot and download the script again in same way 
 
 		xi. Installing redshift
 
-		xii. Installing Network Manager
+		xii. Installing Oracle JDK
+
+		xiii. Installing Network Manager
 
 	5. Ignoring Lid Close
 
