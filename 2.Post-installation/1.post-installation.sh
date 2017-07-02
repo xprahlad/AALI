@@ -59,8 +59,10 @@ echo "xi. Installing redshift"
 echo
 echo "xii. Installing Oracle JDK"
 ./scripts/4.xii.\ Installing\ Oracle\ JDK
-echo "xiii. Installing Network Manager"
-./scripts/4.xiii.\ Installing\ Network\ Manager
+echo "xiii. Installing TLP"
+./scripts/4.xiii.\ Installing\ TLP
+echo "xiv. Installing Network Manager"
+./scripts/4.xiv.\ Installing\ Network\ Manager
 echo
 echo "5. Ignoring Lid Close"
 ./scripts/5.\ Ignoring\ Lid\ Close
@@ -69,7 +71,7 @@ echo "6. Remapping Insert Key to Delete Key"
 ./scripts/6.\ Remapping\ Insert\ Key\ to\ Delete\ Key
 echo
 echo "7. Fixing screen-tearing"
-./scripts/7.\ Fixing\ screen-tearing 
+./scripts/7.\ Fixing\ screen-tearing
 echo
 echo "Arch Linux Setup Completed Successfuly!"
 echo
