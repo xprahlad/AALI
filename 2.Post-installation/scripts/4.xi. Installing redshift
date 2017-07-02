@@ -1,0 +1,2 @@
+sudo pacman -S --noconfirm --needed redshift python-gobject python-xdg librsvg
+cp ../3.Customizations/redshift-gtk.desktop ~/.config/autostart/

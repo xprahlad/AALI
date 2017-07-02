@@ -1,0 +1,1 @@
+pacstrap /mnt base base-devel wget unzip bash-completion intel-ucode iw wpa_supplicant dialog

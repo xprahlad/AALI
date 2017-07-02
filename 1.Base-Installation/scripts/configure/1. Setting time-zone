@@ -1,0 +1,2 @@
+ln -sf /usr/share/zoneinfo/Asia/Kathmandu /etc/localtime
+hwclock --systohc

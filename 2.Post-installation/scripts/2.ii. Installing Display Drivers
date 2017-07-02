@@ -1,0 +1,1 @@
+sudo pacman -S --noconfirm --needed xorg xorg-xinit xorg-twm xterm xf86-video-intel

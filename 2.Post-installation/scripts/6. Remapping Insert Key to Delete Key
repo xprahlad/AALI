@@ -1,0 +1,2 @@
+mkdir -p ~/.config/autostart
+cp ../3.Customizations/CKmap.desktop ~/.config/autostart/

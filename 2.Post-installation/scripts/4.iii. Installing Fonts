@@ -1,0 +1,2 @@
+sudo pacman -S --noconfirm --needed ttf-dejavu
+packer -S --noconfirm --noedit -S ttf-google-fonts-git

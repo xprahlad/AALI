@@ -1,38 +1,31 @@
 echo "1. Updating system clock"
-timedatectl set-ntp true
+./scripts/base/1.\ Updating\ System\ Clock
 echo
 echo "2. Formatting root partition" # (modification required)
-mkfs.ext4 /dev/sda5
+./scripts/base/2.\ Formatting\ root\ partition
 echo
 echo "3. Mounting root and boot partitions" # (modification required)
-mount /dev/sda5 /mnt
-mkdir /mnt/boot
-mount /dev/sda2 /mnt/boot
+./scripts/base/3.\ Mounting\ root\ and\ boot\ partitions
 echo
 echo "4. Turning on swap" # (modification required)
-swapon /dev/sda6
+./scripts/base/4.\ Turning\ on\ swap
 echo
 echo "5. Cleaning boot"
-rm /mnt/boot/vmlinuz-linux
-rm /boot/intel-ucode.img
+ ./scripts/base/5.\ Cleaning\ boot
 echo
 echo "6. Updating to latest mirror"
-(curl https://www.archlinux.org/mirrorlist/?country=all&protocol=http&protocol=https&ip_version=4& sleep 1;) | tee mirrorlist
-sudo cp mirrorlist /etc/pacman.d/
-sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist
-rm mirrorlist
+ ./scripts/base/6.\ Updating\ to\ latest\ mirror
 echo
 echo "7. Installing base system"
-pacstrap /mnt base base-devel wget unzip bash-completion intel-ucode iw wpa_supplicant dialog
+./scripts/base/7.\ Installing\ base\ system
 echo
 ehco "8. Generating fstab"
-genfstab -U /mnt >> /mnt/etc/fstab
-echo tmpfs /tmp tmpfs nodev,nosuid,size=7G 0 0 >> /mnt/etc/fstab
+./scripts/base/8.\ Generating\ fstab
 echo
 echo "9. Changing to chroot"
-arch-chroot /mnt
+./scripts/base/9.\ Changing\ to\ chroot
 echo
 echo "Unmounting partitions" #will execute after user exits chroot
-umount -R /mnt
+./scripts/base/Unmounting\ partitions
 echo
 echo "You can reboot now and login as sarad."

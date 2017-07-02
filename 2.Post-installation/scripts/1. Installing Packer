@@ -1,0 +1,7 @@
+sudo pacman -S fakeroot jshon expac git --needed --noconfirm
+wget https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=packer
+mv PKGBUILD\?h\=packer PKGBUILD
+makepkg
+sudo pacman -U packer-*.pkg.tar.xz --noconfirm
+rm -rf packer pkg/ src/ packer-20160325-1-any.pkg.tar.xz PKGBUILD
+packer -Syu

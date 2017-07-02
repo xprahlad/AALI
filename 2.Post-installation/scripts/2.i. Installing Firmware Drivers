@@ -1,0 +1,1 @@
+packer -S --noconfirm --noedit  lib32-glibc wd719x-firmware aic94xx-firmware

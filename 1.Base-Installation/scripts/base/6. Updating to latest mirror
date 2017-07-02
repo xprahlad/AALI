@@ -1,0 +1,4 @@
+(curl https://www.archlinux.org/mirrorlist/?country=all&protocol=http&protocol=https&ip_version=4& sleep 1;) | tee mirrorlist
+sudo cp mirrorlist /etc/pacman.d/
+sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist
+rm mirrorlist

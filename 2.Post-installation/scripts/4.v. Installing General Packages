@@ -1,0 +1,1 @@
+sudo pacman -S --noconfirm --needed gksu curl gnome-keyring galculator

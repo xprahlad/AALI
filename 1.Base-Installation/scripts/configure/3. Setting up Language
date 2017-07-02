@@ -1,0 +1,1 @@
+echo >> /etc/locale.conf LANG=en_US.UTF-8

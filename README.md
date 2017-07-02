@@ -6,33 +6,46 @@ Do not run these scripts unless you have read this whole documentation carefully
 
 If root and swap partitions does not exist in your PC, they needs to be created before this script is executed. It is optimized for my Intel PC with UEFI boot mode hence go through the script thoroughly and make the required changes as per your specifications.
 
-# How to get this script during installation?
+# Step: 1
 After Arch Linux live media is successfully booted and shell appears, issue the following commands:
 
-	wifi-menu
+	# wifi-menu
+	Connect to your Wi-Fi (not needed if setting up through LAN)
 
-	pacman -Sy unzip
+	# pacman -Sy unzip
 
-	wget https://github.com/ictsolved/aali/archive/master.zip
+	# wget https://github.com/ictsolved/aali/archive/master.zip
 
-	unzip master.zip
+	# unzip master.zip
 
 Now the scripts will be available in working directory along with this documentation. Make the marked changes in the scripts with nano or vi and execute.
 
 The best approach is to fork this repo and push your changes as per the specifications and requirements. This way the changes will be persistent and will be optimized for your PC as well. Afterwards whenever you need the installation of Arch on your PC, you can download your own version of this script and execute that without any hassle.
 
-# What are included within it?
+What are included within it?
 
 	A. Base Installation
 
+		1.base-installation.sh
+
+		2.configure-system.sh
+
 	B. Post Installation
+
+		1.post-installation.sh
 
 	C. Customization
 
-# A. Base Installation
+# Step 2: Base Installation
 Inside this folder there are two scripts for setting up a base installation of Arch system automatically.
 
-# Phase 1 - Installing base system
+Phase 1 - Installing base system
+Execute following command to install base system.
+
+	# cd AALI-master/1.Base-Installation/
+	# ./1.base-installation.sh
+
+Followings are the list of actions performed:
 
 	1. Updating system clock
 
@@ -52,7 +65,12 @@ Inside this folder there are two scripts for setting up a base installation of A
 
 	9. Changing root
 
-# Phase 2 - Configuring system inside chroot
+Phase 2 - Configuring system inside chroot
+Issue following commands:
+
+ 	# ./2.configure-system.sh
+
+This results in:
 
 	1. Setting time-zone
 
@@ -86,8 +104,16 @@ Inside this folder there are two scripts for setting up a base installation of A
 
 	16. Reboot
 
-# 2. Post-installation
-Login as the normal user after reboot and download the script again in same way as before.
+ # Step 3: Post-installation
+Login as the normal user after reboot and issue following commands:
+
+	# wget https://github.com/ictsolved/aali/archive/master.zip
+
+	# unzip master.zip
+
+	# ./1.post-installation.sh
+
+Followings are the output:
 
 	1. Installing Packer
 
@@ -137,9 +163,7 @@ Login as the normal user after reboot and download the script again in same way 
 
 	7. Fixing screen-tearing
 
-	8. Reboot
-
 After the reboot, login with your credentials and you'll be greeted with XFCE4 desktop.
 
-# C. Customization
+C. Customization
 This folder contains the customization files. Some customizations are automatically copied whereas few needs to be manually done. Hence the files inside "Manual" will be helpful to accelerate the customization but it is optional if your customizations are different.
