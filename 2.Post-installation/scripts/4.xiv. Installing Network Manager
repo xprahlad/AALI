@@ -1,2 +1,0 @@
-sudo pacman -S --noconfirm --needed networkmanager network-manager-applet
-sudo systemctl enable NetworkManager.service
