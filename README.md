@@ -156,9 +156,7 @@ Followings are the output:
 
 		xii. Installing Oracle JDK
 
-		xiii. Installing TLP
-
-		xiv. Installing Network Manager
+		xiii. Installing Network Manager
 
 	5. Ignoring Lid Close
 
