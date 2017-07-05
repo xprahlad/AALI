@@ -20,6 +20,9 @@ echo
 echo "7. Enabling multilib"
 ./scripts/configure/7.\ Enabling\ multilib
 echo
+echo "14. Installing Packages"
+./scripts/configure/14.\ Installing\ Packages
+echo
 echo "8. Installing Bootloader"
 ./scripts/configure/8.\ Installing\ Bootloader
 echo
@@ -38,5 +41,7 @@ echo
 echo "13. Enabling sudo for sarad"
 ./scripts/configure/13.\ Enabling\ sudo\ for\ sarad 
 echo
-echo "Configurations Completed"
+echo "Configuration Completed"
+echo
 echo "Press Ctrl+D to exit from chroot"
+echo

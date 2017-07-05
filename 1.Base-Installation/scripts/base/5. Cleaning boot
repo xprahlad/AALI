@@ -1,2 +1,2 @@
 rm /mnt/boot/vmlinuz-linux
-rm /boot/intel-ucode.img
+rm /mnt/boot/intel-ucode.img

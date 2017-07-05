@@ -1,4 +1,4 @@
-sudo pacman -S fakeroot jshon expac git --needed --noconfirm
+sudo pacman -S base-devel fakeroot jshon expac git --needed --noconfirm
 wget https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=packer
 mv PKGBUILD\?h\=packer PKGBUILD
 makepkg
