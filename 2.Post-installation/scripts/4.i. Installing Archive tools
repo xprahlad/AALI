@@ -1,1 +1,1 @@
-sudo pacman -S --noconfirm --needed p7zip unrar tar zip file-roller
+sudo pacman -S --noconfirm --needed p7zip unrar unzip tar zip file-roller

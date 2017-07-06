@@ -7,16 +7,11 @@ Do not run these scripts unless you have read this whole documentation carefully
 If root and swap partitions does not exist in your PC, they needs to be created before this script is executed. It is optimized for my Intel PC with UEFI boot mode hence go through the script thoroughly and make the required changes as per your specifications.
 
 # Step: 1
-After Arch Linux live media is successfully booted and shell appears, issue the following commands:
+After internet connection is successfully established in live media, issue the following commands:
 
-	$ wifi-menu
-	Connect to your Wi-Fi (not needed if setting up through LAN)
+	$ wget https://github.com/ictsolved/aali/tarball/master
 
-	$ pacman -Sy unzip
-
-	$ wget https://github.com/ictsolved/aali/archive/master.zip
-
-	$ unzip master.zip
+	$ tar -xvf master
 
 Now the scripts will be available in working directory along with this documentation. Make the marked changes in the scripts with nano or vi and execute.
 
@@ -42,7 +37,7 @@ Inside this folder there are two scripts for setting up a base installation of A
 Phase 1 - Installing base system
 Execute following command to install base system.
 
-	$ cd AALI-master/1.Base-Installation/
+	$ cd ictsolved-AALI-xxxxxxx/1.Base-Installation/
 
 	$ ./1.base-installation.sh
 
@@ -104,13 +99,13 @@ This results in:
 	15. Unmounting partitions
 
  # Step 3: Post-installation
-Login as the normal user after reboot and issue following commands:
+Login as the normal user after reboot, establish internet connection and issue following commands:
 
-	$ wget https://github.com/ictsolved/aali/archive/master.zip
+	$ wget https://github.com/ictsolved/aali/tarball/master
 
-	$ unzip master.zip
+	$ tar -xvf master
 
-	$ cd AALI-master/2.Post-installation/
+	$ cd ictsolved-AALI-xxxxxxx/2.Post-installation/
 
 	$ ./1.post-installation.sh
 
