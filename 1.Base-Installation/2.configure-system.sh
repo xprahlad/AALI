@@ -39,4 +39,5 @@ echo "13. Enabling sudo for sarad"
 ./scripts/configure/13.\ Enabling\ sudo\ for\ sarad 
 echo
 echo "Configurations Completed"
+echo
 echo "Press Ctrl+D to exit from chroot"

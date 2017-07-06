@@ -24,7 +24,6 @@ ehco "8. Generating fstab"
 echo
 echo "9. Changing to chroot"
 ./scripts/base/9.\ Changing\ to\ chroot
-echo
 echo "Unmounting partitions" #will execute after user exits chroot
 ./scripts/base/Unmounting\ partitions
 echo

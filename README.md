@@ -159,6 +159,8 @@ Followings are the output:
 
 	7. Fixing screen-tearing
 
+	8. Enabling Hibernation
+
 After the reboot, login with your credentials and you'll be greeted with XFCE4 desktop.
 
 # Step 4: Customization
