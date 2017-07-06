@@ -72,6 +72,9 @@ echo
 echo "7. Fixing screen-tearing"
 ./scripts/7.\ Fixing\ screen-tearing
 echo
+echo "8. Enabling Hibernation"
+./scripts/8.\ Enable\ Hibernation
+echo
 echo "Arch Linux Setup Completed Successfuly!"
 echo
 echo "Please reboot the computer now."
