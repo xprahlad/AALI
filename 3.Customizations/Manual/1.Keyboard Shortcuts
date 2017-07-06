@@ -1,3 +1,9 @@
-xfce4-screenshooter -f -s ~/
+xfce4-screenshooter -f -s /home/sarad
 
-xfce4-screenshooter -f -r ~/
+xfce4-screenshooter -r -s /home/sarad
+
+xfce4-popup-whiskermenu
+
+xfce4-terminal
+
+thunar
