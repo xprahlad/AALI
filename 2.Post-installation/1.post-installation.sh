@@ -60,8 +60,11 @@ echo
 echo "xii. Installing Oracle JDK"
 ./scripts/4.xii.\ Installing\ Oracle\ JDK
 echo
-echo "xiii. Installing Network Manager"
-./scripts/4.xiii.\ Installing\ Network\ Manager
+echo "xiii. Installing Black Arch Repo"
+./scripts/4.xiii.\ Installing\ Black\ Arch\ Repo 
+echo
+echo "xiv. Installing Network Manager"
+./scripts/4.xiv.\ Installing\ Network\ Manager
 echo
 echo "5. Ignoring Lid Close"
 ./scripts/5.\ Ignoring\ Lid\ Close

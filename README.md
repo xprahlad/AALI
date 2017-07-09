@@ -150,8 +150,10 @@ Followings are the output:
 		xi. Installing redshift
 
 		xii. Installing Oracle JDK
+		
+		xiii. Installing Black Arch Repo		
 
-		xiii. Installing Network Manager
+		xiv. Installing Network Manager
 
 	5. Ignoring Lid Close
 
