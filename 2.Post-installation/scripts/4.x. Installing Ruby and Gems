@@ -4,5 +4,5 @@ rbenv init
 rbenv install 2.4.1
 rbenv local 2.4.1
 echo "gem: --no-document" >> ~/.gemrc
-gem install jekyll bundler rails
+gem install jekyll bundler
 rbenv rehash
