@@ -143,7 +143,7 @@ Followings are the output:
 
 		viii. Installing Evince Document Viewer
 
-		ix. Installing Atom Editor
+		ix. Installing Sublime Editor
 
 		x. Installing Ruby and Gems
 
