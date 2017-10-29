@@ -48,8 +48,8 @@ echo
 echo "viii. Installing Evince Document Viewer"
 ./scripts/4.viii.\ Installing\ Evince\ Document\ Viewer
 echo
-echo "ix. Installing Atom Editor"
-./scripts/4.ix.\ Installing\ Atom\ Editor
+echo "ix. Installing Sublime Editor"
+./scripts/4.ix.\ Installing\ Sublime\ Editor
 echo
 echo "x. Installing Ruby and Gems"
 ./scripts/4.x.\ Installing\ Ruby\ and\ Gems

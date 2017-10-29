@@ -1,0 +1,1 @@
+packer -S --noconfirm --noedit sublime-text-dev
