@@ -8,5 +8,4 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 #Ruby Settings
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
