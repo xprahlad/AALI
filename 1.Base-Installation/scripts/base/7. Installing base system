@@ -1,1 +1,1 @@
-pacstrap /mnt base base-devel wget bash-completion intel-ucode iw wpa_supplicant dialog reflector
+pacstrap /mnt base base-devel wget bash-completion intel-ucode iw wpa_supplicant dialog reflector os-prober grub efibootmgr

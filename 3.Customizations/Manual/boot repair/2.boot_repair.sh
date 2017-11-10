@@ -1,4 +1,5 @@
 pacman -S --noconfirm linux intel-ucode
-bootctl install
-cp -r ../../../1.Base-Installation/loader/ /boot/
-bootctl update
+rm -rf /boot/grub
+rm -rf /boot/EFI/Arch
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=Arch
+grub-mkconfig -o /boot/grub/grub.cfg
