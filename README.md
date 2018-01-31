@@ -80,11 +80,11 @@ This results in:
 
 	6. Setting up password for root user
 
-	7. Creating normal user
+	7. Creating user sarad
 
-	8. Setting up password for the new user
+	8. Setting up password for sarad
 
-	9. Enabling sudo for new user
+	9. Enabling sudo for sarad
 
 	10. Enabling multilib
 
@@ -137,7 +137,7 @@ Followings are the output:
 
 		v. Installing General Packages
 
-		vi. Installing GIMP Photo Editor
+		vi. Installing GIMP Photo Editor (Commented Out Now)
 
 		vii. Installing Google Chrome
 

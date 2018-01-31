@@ -1,2 +1,2 @@
 genfstab -U /mnt >> /mnt/etc/fstab
-echo tmpfs /tmp tmpfs nodev,nosuid,size=7G 0 0 >> /mnt/etc/fstab
+echo tmpfs /tmp tmpfs nodev,nosuid,size=6G 0 0 >> /mnt/etc/fstab

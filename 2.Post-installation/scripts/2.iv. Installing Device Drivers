@@ -1,1 +1,1 @@
-sudo pacman -S --noconfirm --needed gvfs gvfs-mtp ntfs-3g
+sudo pacman -S --noconfirm --needed gvfs gvfs-mtp ntfs-3g exfat-utils
