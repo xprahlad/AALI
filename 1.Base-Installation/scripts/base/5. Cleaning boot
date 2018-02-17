@@ -1,2 +1,0 @@
-rm /mnt/boot/vmlinuz-linux
-rm /mnt/boot/intel-ucode.img

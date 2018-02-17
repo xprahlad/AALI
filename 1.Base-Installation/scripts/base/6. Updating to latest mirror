@@ -1,8 +1,0 @@
-#(curl https://www.archlinux.org/mirrorlist/?country=all&protocol=http&protocol=https&ip_version=4& sleep 1;) | tee mirrorlist
-#sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-#sudo cp mirrorlist /etc/pacman.d/
-#sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist
-sudo pacman -Sy
-sudo pacman -S reflector --noconfirm --needed
-sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
-#rm mirrorlist

@@ -1,1 +1,0 @@
-sed -i -e 's/GRUB_CMDLINE_LINUX_DEFAULT="/GRUB_CMDLINE_LINUX_DEFAULT="resume=\/dev\/sda6 /g' /etc/default/grub

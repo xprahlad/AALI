@@ -1,3 +1,0 @@
-mount /dev/sda5 /mnt
-mkdir -p /mnt/boot
-mount /dev/sda2 /mnt/boot
