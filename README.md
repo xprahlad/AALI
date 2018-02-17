@@ -4,7 +4,7 @@ This is an automated Arch Linux installation script that covers pre-installation
 # Warning
 Do not run these scripts unless you have read this whole documentation carefully and modified the scripts accordingly for you. I am not responsible for any damage or data loss caused to you due to your negligence. You should have knowledge of what each command is doing and how to modify that command in your case. The commands that must be modified to prevent the data loss are marked as "modification required".
 
-If root and swap partitions does not exist in your PC, they needs to be created before this script is executed. It is optimized for my Intel PC with UEFI boot mode hence go through the script thoroughly and make the required changes as per your specifications.
+If root and swap partitions does not exist in your PC, they needs to be created before this script is executed. You can use tools like fdisk, gdisk, parted or pseudo-graphics tool like cfdisk to create or modify the partitions. It is optimized for my Intel PC with UEFI boot mode hence go through the script thoroughly and make the required changes as per your specifications.
 
 # Step: 1
 Connect to the internet through LAN or Wi-Fi. To get connected through Wi-Fi, type following command:

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ehco "Generating fstab"
+echo "Generating fstab"
 genfstab -U /mnt >> /mnt/etc/fstab
 echo
 
