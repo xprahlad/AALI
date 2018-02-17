@@ -1,1 +1,0 @@
-packer -S --noconfirm --noedit -S jdk

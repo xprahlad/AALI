@@ -1,4 +1,0 @@
-sudo cp ../3.Customizations/image_size /sys/power/image_size 
-sudo cp /etc/mkinitcpio.conf /etc/mkinitcpio.conf.bak
-sudo sed -i -e 's/base udev/base udev resume/g' /etc/mkinitcpio.conf
-sudo mkinitcpio -p linux

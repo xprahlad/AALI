@@ -1,2 +1,0 @@
-#sudo pacman -S --noconfirm --needed gimp
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/doctormo/GimpPs/master/tools/install.sh)"

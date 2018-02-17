@@ -7,7 +7,13 @@ Do not run these scripts unless you have read this whole documentation carefully
 If root and swap partitions does not exist in your PC, they needs to be created before this script is executed. It is optimized for my Intel PC with UEFI boot mode hence go through the script thoroughly and make the required changes as per your specifications.
 
 # Step: 1
-After internet connection is successfully established in live media, issue the following commands:
+Connect to the internet through LAN or Wi-Fi. To get connected through Wi-Fi, type following command:
+	
+	$ wifi-menu
+
+Select the network from the list, provide required credentials and get connected.
+
+After internet connection is successfully established, issue the following commands to download AALI scripts:
 
 	$ wget https://github.com/ictsolved/aali/tarball/master
 
@@ -55,14 +61,16 @@ Followings are the list of actions performed:
 
 	6. Updating to latest mirrors
 
-	7. Installing base system
+	7. Importing new pacman keys
 
-	8. Generating fstab
+	8. Installing base system
 
-	9. Changing root
+	9. Generating fstab
+
+	10. Changing root
 
 Phase 2 - Configuring system inside chroot
-Issue following commands:
+Download the AALI scripts again and extract it then enter the 1.Base Installation folder. Now issue following commands:
 
  	$ ./2.configure-system.sh
 
@@ -137,7 +145,7 @@ Followings are the output:
 
 		v. Installing General Packages
 
-		vi. Installing GIMP Photo Editor (Commented Out Now)
+		vi. Installing GIMP Photo Editor
 
 		vii. Installing Google Chrome
 
