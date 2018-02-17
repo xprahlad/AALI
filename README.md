@@ -70,7 +70,8 @@ Followings are the list of actions performed:
 	10. Changing root
 
 Phase 2 - Configuring system inside chroot
-Download the AALI scripts again and extract it then enter the 1.Base Installation folder. Now issue following commands:
+
+Download the AALI scripts again and extract it then enter the Base Installation folder. Now issue following commands:
 
  	$ ./2.configure-system.sh
 
