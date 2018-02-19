@@ -6,6 +6,6 @@
 
 #bash-completion helps in auto-completing commands hence included
 
-echo "Installing System"
+echo -e "\nInstalling System\n"
 pacstrap /mnt base base-devel wget bash-completion
 echo

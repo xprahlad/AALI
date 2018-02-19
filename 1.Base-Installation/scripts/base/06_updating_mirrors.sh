@@ -2,28 +2,28 @@
 
 #Even very old iso containing dead mirrors also works with this method
 
-echo "Downloading latest mirrors"
-(curl https://www.archlinux.org/mirrorlist/?country=all&protocol=http&protocol=https&ip_version=4& sleep 1;) | tee mirrorlist
+echo -e "\nDownloading latest mirrors\n"
+(curl https://www.archlinux.org/mirrorlist/?country=all&protocol=http&protocol=https&ip_version=4& sleep 1;) | tee mirrorlist > /dev/null
 echo
 
-echo "Making backup of existing mirrors"
+echo -e "\nMaking backup of existing mirrors\n"
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 echo
 
-echo "Copying new mirrors"
+echo -e "\nCopying new mirrors\n"
 sudo cp mirrorlist /etc/pacman.d/
 sudo sed -i 's/^#Server/Server/' /etc/pacman.d/mirrorlist
 echo
 
-echo "Updating pacakge repository"
+echo -e "\nUpdating pacakge repository\n"
 sudo pacman -Sy
 echo
 
-echo "Choosing fastest mirror"
+echo -e "\nChoosing fastest mirror\n"
 sudo pacman -S reflector --noconfirm --needed
-sudo reflector --verbose --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
+sudo reflector --latest 20 --sort rate --save /etc/pacman.d/mirrorlist
 echo
 
-echo "Removing temporary file"
+echo -e "\nRemoving temporary file\n"
 rm mirrorlist
 echo

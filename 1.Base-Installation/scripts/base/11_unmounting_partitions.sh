@@ -2,6 +2,6 @@
 
 #This will execute after user exits from chroot
 
-echo "Unmounting Partitions"
+echo -e "\nUnmounting Partitions\n"
 umount -R /mnt
 echo

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Changing root"
+echo -e "\nChanging root\n"
 arch-chroot /mnt
 echo

@@ -4,6 +4,6 @@
 
 #Useful if old iso is used
 
-echo "Refreshing keys"
+echo -e "\nRefreshing keys\n"
 pacman-key --refresh-keys
 echo

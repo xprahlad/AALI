@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Generating fstab"
+echo -e "\nGenerating fstab\n"
 genfstab -U /mnt >> /mnt/etc/fstab
 echo
 
-echo "Setting size of tmpfs"
+echo -e "\nSetting size of tmpfs\n"
 #This manually sets the size of tmpfs
 #helpful when compiling packages inside /tmp with low RAM
 #change the size accordingly for yours to prevent any failure

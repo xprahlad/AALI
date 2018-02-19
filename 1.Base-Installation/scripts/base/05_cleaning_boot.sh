@@ -2,7 +2,7 @@
 
 #Cleans boot of previous installation if exists
 
-echo "Cleaning Boot"
+echo -e "\nCleaning Boot\n"
 if [ -f /mnt/boot/vmlinuz-linux ]
   then
 	rm /mnt/boot/vmlinuz-linux

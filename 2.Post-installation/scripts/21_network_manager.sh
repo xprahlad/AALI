@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Install it at least because after starting network manager service, wifi gets disconnected
+
 echo "Installing Network Manager"
 sudo pacman -S --noconfirm --needed networkmanager network-manager-applet
 echo

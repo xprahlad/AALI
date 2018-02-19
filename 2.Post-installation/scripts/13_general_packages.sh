@@ -6,5 +6,6 @@ echo "Installing General Packages"
 #gnome-keyring helpful for setting password protected access for supported apps
 #galculator is a calculator
 #reflector is helps in rating pacman mirrors
-sudo pacman -S --noconfirm --needed gksu ntp curl gnome-keyring galculator reflector
+#rclone for google-drive and other cloud storage synchronization
+sudo pacman -S --noconfirm --needed gksu ntp curl gnome-keyring galculator reflector rclone
 echo

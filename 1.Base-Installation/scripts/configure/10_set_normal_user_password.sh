@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Set password for the normal user"
+echo -e "\nSet password for the normal user\n"
 #replace "sarad" with your username used in previous script
 passwd sarad
 echo

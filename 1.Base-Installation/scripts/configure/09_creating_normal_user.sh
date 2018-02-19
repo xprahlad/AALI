@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Creating normal user"
+echo -e "\nCreating normal user\n"
 #replace "sarad" with your username
 useradd -m -G wheel -s /bin/bash sarad
 echo

@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "Updating system clock"
+echo -e "\nUpdating system clock\n"
 timedatectl set-ntp true
 echo

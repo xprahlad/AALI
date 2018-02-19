@@ -4,4 +4,4 @@ for file in scripts/base/*; do
     [ -f "$file" ] && [ -x "$file" ] && "$file"
 done
 
-echo "If unmounting succeeded, you can reboot and login as normal user."
+echo "If no errors occured during unmount, you can reboot and login as normal user."
