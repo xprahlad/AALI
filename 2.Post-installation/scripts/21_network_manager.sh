@@ -3,7 +3,7 @@
 #Install it at least because after starting network manager service, wifi gets disconnected
 
 echo "Installing Network Manager"
-sudo pacman -S --noconfirm --needed networkmanager network-manager-applet
+sudo pacman -S --noconfirm --needed networkmanager plasma-nm
 echo
 
 echo "Enabling Networ Manager at Startup"

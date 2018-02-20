@@ -5,7 +5,7 @@ echo -e "\nDownloading GRUB\n"
 #os-prober required if dual boot
 #grub does add Windows entry when run from chroot
 #update grub again after logging in to add Windows entry
-pacman -S --noconfirm --needed grub efibootmgr os-prober
+pacman -S --noconfirm --needed grub efibootmgr
 echo
 
 echo -e "\nInstalling GRUB\n"

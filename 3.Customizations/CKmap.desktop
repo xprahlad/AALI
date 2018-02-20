@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=Set Keyboard
-Exec=xmodmap -e "keycode 118 = Delete"
-Terminal=false
-Type=Application
-Icon=/usr/share/icons/gnome/256x256/apps/preferences-desktop-keyboard-shortcuts.png
